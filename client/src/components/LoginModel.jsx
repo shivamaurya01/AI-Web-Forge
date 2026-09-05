@@ -18,6 +18,7 @@ function LoginModel({open,onClose}) {
                 avatar:result.user.photoURL
             },{withCredentials:true})
             dispatch(setUserData(data))
+            onClose()
         }catch(error){
             console.log(error)
 

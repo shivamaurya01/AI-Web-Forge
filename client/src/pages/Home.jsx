@@ -24,6 +24,7 @@ function Home() {
     try{
       await axios.get(`${serverUrl}/api/auth/logout`,{withCredentials:true})
       dispatch(setUserData(null))
+      setOpenProfile(false)
 
     }catch(error){
       console.log(error)

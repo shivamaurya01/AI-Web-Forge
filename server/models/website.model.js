@@ -46,4 +46,5 @@ const websiteSchema = new mongoose.Schema({
 },{timestamps:true})
 
 const Website=mongoose.model("Website",websiteSchema)
+
 export default Website

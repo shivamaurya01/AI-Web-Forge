@@ -3,10 +3,11 @@ import { AnimatePresence, motion } from "motion/react";
 import LoginModel from "../components/LoginModel.jsx";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Coins, CoinsIcon } from "lucide-react";
+import { Coins } from "lucide-react";
 import axios from "axios";
 import { serverUrl } from "../App.jsx";
 import { setUserData } from "../redux/userSlice.js";
+import { useNavigate } from "react-router-dom";
 function Home() {
   const highlights = [
     "AI Generated Code",
@@ -16,11 +17,19 @@ function Home() {
 
   const [openLogin, setOpenLogin] = useState(false);
   const { userData } = useSelector((state) => state.user);
+    // console.log("USER DATA:", userData);
+    // console.log("AVATAR URL:", userData?.avatar);
+
   const [openProfile, setOpenProfile] = useState(false);
   const dispatch = useDispatch()
+  const navigate =useNavigate()
+
+  // const { userData } = useSelector((state) => state.user);
+
 
   const handleLogOut=async ()=>{
     console.log("logout click")
+    console.log("userData:", userData);
     try{
       await axios.get(`${serverUrl}/api/auth/logout`,{withCredentials:true})
       dispatch(setUserData(null))
@@ -68,14 +77,28 @@ function Home() {
                   className="flex items-center"
                   onClick={() => setOpenProfile(!openProfile)}
                 >
-                  <img
+                  {/* <img
                     src={
-                      userData.avatar ||
+                      
+                      userData?.avatar ||
                       `https://ui-avatars.com/api/?name=${userData.name}`
                     }
                     alt=""
                     className="w-9 h-9 rounded-full border border-white/20 object-cover"
-                  />
+                  /> */}
+                  <img
+  src={userData?.avatar}
+  alt={userData?.name || "User"}
+  referrerPolicy="no-referrer"
+  onError={(e) => {
+    console.log("Image failed:", e.target.src);
+    e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+      userData?.name || "User"
+    )}`;
+  }}
+  className="w-9 h-9 rounded-full border border-white/20 object-cover"
+/>
+                 
                 </button>
                 <AnimatePresence>
                   {openProfile && (
@@ -103,7 +126,7 @@ function Home() {
                           <span className="font-semibold">+</span>
                         </button>
 
-                        <button className="w-full px-4 py-3 text-left text-sm hover:bg-white/5">Dashboard</button>
+                        <button className="w-full px-4 py-3 text-left text-sm hover:bg-white/5" onClick={()=>navigate("/dashboard")}>Dashboard</button>
                         <button className="w-full px-4 py-3 text-left text-sm text-red-400 hover:bg-white/5" onClick={handleLogOut}>Log out</button>
                       </motion.div>
                     </>
@@ -139,8 +162,7 @@ function Home() {
           production-ready website.
         </motion.p>
 
-        <button className="px-10 py-4 rounded-xl bg-white text-black font-semibold hover:scale-105 transition mt-12">
-          Get Started
+        <button className="px-10 py-4 rounded-xl bg-white text-black font-semibold hover:scale-105 transition mt-12" onClick={()=>navigate("/dashboard")}>{ userData?"Go to dashboard":"Get Started" }
         </button>
       </section>
 

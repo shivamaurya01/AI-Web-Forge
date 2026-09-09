@@ -98,9 +98,11 @@ function Generate() {
         try{
             const result = await axios.post(`${serverUrl}/api/website/generate`,{prompt},{withCredentials:true})
             console.log(result)
-        }catch(error){
-            console.log(error)
-        }
+        }catch (error) {
+    console.error("Generation Error:", error);
+
+    console.error("Backend response:", error.response?.data);
+}
     }
 
     return (

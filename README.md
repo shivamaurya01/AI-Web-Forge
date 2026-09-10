@@ -342,8 +342,8 @@ I'm building this project incrementally and documenting the development process 
 * [x] Tailwind CSS setup
 * [x] Motion animation setup
 * [x] Authentication system
-* [ ] Protected routes
-* [ ] AI website generation
+* [x] Protected routes
+* [x] AI website generation
 * [ ] Credit management
 * [ ] Stripe Checkout
 * [ ] Stripe Webhooks
@@ -371,24 +371,24 @@ I'm building this project incrementally and documenting the development process 
 
 * [x] User registration
 * [x] User login
-* [ ] Authentication middleware
+* [x] Authentication middleware
 * [ ] Protected routes
 * [ ] User dashboard
 
 ### Phase 3 — AI Website Generation
 
-* [ ] Prompt input
-* [ ] AI integration
-* [ ] Website generation
+* [x] Prompt input
+* [x] AI integration
+* [x] Website generation
 * [ ] Generated code handling
 * [ ] Website preview
 * [ ] Regeneration workflow
 
 ### Phase 4 — Credit System
 
-* [ ] User credit model
-* [ ] Credit deduction
-* [ ] Credit validation
+* [x] User credit model
+* [x] Credit deduction
+* [x] Credit validation
 * [ ] Transaction history
 * [ ] Credit dashboard
 

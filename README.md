@@ -372,7 +372,7 @@ I'm building this project incrementally and documenting the development process 
 * [x] User registration
 * [x] User login
 * [x] Authentication middleware
-* [ ] Protected routes
+* [X] Protected routes
 * [ ] User dashboard
 
 ### Phase 3 — AI Website Generation

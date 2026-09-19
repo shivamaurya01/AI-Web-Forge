@@ -965,6 +965,7 @@ function WebsiteEditor() {
                         <div className="w-full h-full pt-9">
                             <iframe
                                 ref={iframeRef}
+                                sandbox='allow-scripts allow-same-origin allow-forms'
                                 title="Website Preview"
                                 className="w-full h-full bg-white border-0"
                             />
@@ -1176,6 +1177,7 @@ function WebsiteEditor() {
                         <div className="flex-1 min-h-0 bg-white">
                             <iframe
                                 title="Full Website Preview"
+                                sandbox='allow-scripts allow-same-origin allow-forms'
                                 className="w-full h-full border-0 bg-white"
                                 srcDoc={code}
                             />

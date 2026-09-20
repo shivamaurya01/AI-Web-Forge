@@ -74,18 +74,21 @@ function Home() {
                     </div>
 
                     <div className="flex items-center gap-5">
-                        <div className="hidden md:inline text-sm text-zinc-400 hover:text-white cursor-pointer transition">
+                        <div className="hidden md:inline text-sm text-zinc-400 hover:text-white cursor-pointer transition" 
+                        onClick={()=>navigate("/pricing")}>
                             Pricing
                         </div>
 
                         {userData && (
-                            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm cursor-pointer hover:bg-white/10 transition">
+                            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm cursor-pointer hover:bg-white/10 transition"  onClick={()=>navigate("/pricing")}>
                                 <Coins
                                     size={14}
                                     className="text-yellow-400"
                                 />
 
-                                <span className="text-zinc-300">
+                                <span className="text-zinc-300"
+                               
+                                >
                                     Credits
                                 </span>
 
@@ -304,7 +307,7 @@ function Home() {
                                 Dashboard
                             </button>
 
-                            <button className="hover:text-white transition">
+                            <button className="hover:text-white transition" onClick={()=>navigate("/pricing")}>
                                 Pricing
                             </button>
 

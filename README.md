@@ -373,14 +373,14 @@ I'm building this project incrementally and documenting the development process 
 * [x] User login
 * [x] Authentication middleware
 * [X] Protected routes
-* [ ] User dashboard
+* [X] User dashboard
 
 ### Phase 3 — AI Website Generation
 
 * [x] Prompt input
 * [x] AI integration
 * [x] Website generation
-* [ ] Generated code handling
+* [X] Generated code handling
 * [ ] Website preview
 * [ ] Regeneration workflow
 

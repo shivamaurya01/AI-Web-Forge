@@ -344,10 +344,7 @@ I'm building this project incrementally and documenting the development process 
 * [x] Authentication system
 * [x] Protected routes
 * [x] AI website generation
-* [ ] Credit management
-* [ ] Stripe Checkout
-* [ ] Stripe Webhooks
-* [ ] Website preview
+* [x] Website preview
 * [ ] One-click deployment
 * [ ] Production optimization
 * [ ] Complete SaaS workflow

@@ -1,199 +1,330 @@
-# 🚀 AI Web Forge — AI-Powered Website Builder
+🚀 AI Web Forge — AI-Powered Website Builder
 
-> **Describe your idea. Let AI build it. Deploy it in one click. 🤯**
+Describe your idea. Let AI build it. Preview it. Deploy it. 🤯
 
-AI Web Forge is a full-stack **AI-powered website builder SaaS** that allows users to generate complete websites using natural-language prompts and deploy them with a single click.
+AI Web Forge is a full-stack AI-powered website builder SaaS that allows users to generate websites from natural-language prompts, preview and edit the generated code, and deploy websites from the platform.
 
-This project is being built with a **production-oriented SaaS architecture**, including authentication, credit management, Stripe payments, AI website generation, deployment automation, and cloud hosting.
+The project combines AI website generation, authentication, credit-based usage, Stripe payments, code editing, live previews, and deployment into a single full-stack application.
 
----
+🌐 Live Demo
 
-## 🌐 Project Overview
+Frontend: AI Web Forge
 
-Traditional website development requires writing code, configuring projects, and setting up deployment infrastructure.
+The application is deployed on Render. Some features may require authentication and available credits.
 
-**AI Web Forge simplifies this workflow:**
+✨ Project Overview
 
-```text
+AI Web Forge simplifies the website-building workflow:
+
 User Idea
+    ↓
+Natural-Language Prompt
     ↓
 AI Website Generation
     ↓
-Generated Website
+Code Editor + Live Preview
     ↓
-Preview / Edit
+Customize / Regenerate
     ↓
-One-Click Deployment
+Deploy
     ↓
 Live Website 🚀
-```
 
-Users can describe what they want to build, and the platform uses AI to generate the website automatically.
+Users can describe the website they want to create, and the application uses an AI model to generate website code. The generated website can then be viewed in a live preview, edited, and deployed.
 
-A **credit-based system** controls AI generations, while **Stripe Checkout** allows users to purchase additional credits.
+A credit-based system controls AI usage, while Stripe Checkout is used for purchasing additional credits.
 
----
+🔥 Features
 
-## 🔥 Features
+🤖 AI Website Generation
 
-### 🤖 AI Website Generation
+Generate websites using natural-language prompts
 
-* Generate websites using natural-language prompts
-* AI-powered website creation
-* Automatically generate website structure and content
-* Prompt-based development workflow
-* Designed for rapid prototyping
+AI-powered HTML/CSS/JavaScript website generation
 
-### 🚀 One-Click Deployment
+Prompt-based development workflow
 
-* Deploy generated websites directly from the platform
-* Automated deployment workflow
-* Production-ready deployment architecture
-* Users don't need to manually configure deployment
+Generate and refine websites through conversational prompts
 
-### 💰 Credit-Based System
+Structured AI responses for reliable code generation
 
-* Users receive credits for AI generations
-* Each generation consumes credits
-* Credit balance tracking
-* Prevents unlimited resource consumption
-* Designed for scalable SaaS monetization
+🧑‍💻 Website Editor
 
-### 💳 Stripe Payments
+Edit generated website code
 
-* Stripe Checkout integration
-* Secure credit purchases
-* Payment verification using webhooks
-* Automatic credit updates after successful payment
-* Server-side payment validation
+Integrated code editor
 
-### 🔐 Authentication & Security
+Live website preview
 
-* User authentication
-* Protected routes
-* Secure API architecture
-* Backend authorization
-* Protected credit and payment operations
+Desktop, tablet, and mobile preview modes
 
-### 🎞 Modern UI & Animations
+Regenerate or improve the website using prompts
 
-* Responsive interface
-* Tailwind CSS styling
-* Smooth animations using Motion
-* Modern SaaS dashboard experience
-* Interactive user experience
+🚀 Website Deployment
 
-### ☁️ Production Deployment
+Deploy generated websites from the platform
 
-* Frontend deployed on Render
-* Backend deployed on Render
-* MongoDB cloud database
-* Environment-based configuration
-* Production-oriented architecture
+Automated deployment workflow
 
----
+Deployment status handling
 
-# 🛠 Tech Stack
+Access generated live URLs from the dashboard
 
-## Frontend
+💰 Credit-Based Usage
 
-| Technology      | Purpose            |
-| --------------- | ------------------ |
-| ⚛️ React.js     | Frontend framework |
-| 🎨 Tailwind CSS | Styling            |
-| 🎞️ Motion      | UI animations      |
-| 🔗 Axios        | API communication  |
+New users receive free credits
 
-## Backend
+AI generations consume credits
 
-| Technology              | Purpose             |
-| ----------------------- | ------------------- |
-| 🟢 Node.js              | Backend runtime     |
-| 🚂 Express.js           | REST API            |
-| 🍃 MongoDB              | Database            |
-| 🔐 JWT / Authentication | User authentication |
+Credit balance is stored and managed on the backend
 
-## Payments
+Credit validation prevents generation without sufficient credits
 
-| Technology         | Purpose              |
-| ------------------ | -------------------- |
-| 💳 Stripe Checkout | Payment processing   |
-| 🔔 Stripe Webhooks | Payment verification |
-| 💰 Credits         | SaaS billing system  |
+Users can purchase additional credit packages
 
-## Deployment
+💳 Stripe Payments
 
-| Technology       | Purpose                    |
-| ---------------- | -------------------------- |
-| ☁️ Render        | Frontend & backend hosting |
-| 🍃 MongoDB Atlas | Cloud database             |
+Stripe Checkout integration
 
----
+Test-mode payment support
 
-# 🏗️ Architecture
+Credit-based paid plans
 
-The application follows a full-stack SaaS architecture:
+Stripe webhook integration
 
-```text
-                    ┌─────────────────────┐
-                    │       User          │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │   Tailwind + Motion │
-                    └──────────┬──────────┘
-                               │
-                         REST API
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Express Backend   │
-                    │      Node.js        │
-                    └──────┬──────┬───────┘
-                           │      │
-                ┌──────────┘      └──────────┐
-                ▼                             ▼
-       ┌─────────────────┐          ┌─────────────────┐
-       │    MongoDB      │          │   AI Service    │
-       │ Users / Credits │          │ Website Gen.    │
-       └─────────────────┘          └────────┬────────┘
+Webhook signature verification
+
+Automatic credit updates after successful payments
+
+Server-side payment and credit handling
+
+🔐 Authentication & Authorization
+
+User authentication
+
+Google authentication
+
+JWT-based authentication
+
+Protected routes
+
+Backend authorization
+
+User-specific website and credit management
+
+🎨 Modern SaaS UI
+
+Responsive React interface
+
+Tailwind CSS styling
+
+Motion-based animations
+
+Modern dashboard
+
+Interactive AI chat experience
+
+Responsive preview modes
+
+🛠 Tech Stack
+
+Frontend
+
+Technology
+
+Purpose
+
+⚛️ React.js
+
+Frontend application
+
+🎨 Tailwind CSS
+
+Styling and responsive UI
+
+🎞️ Motion
+
+UI animations
+
+🔗 Axios
+
+API communication
+
+🧑‍💻 Monaco Editor
+
+Website code editing
+
+🗃️ Redux
+
+Client-side state management
+
+🧩 React Router
+
+Application routing
+
+✨ Lucide React
+
+Icons
+
+Backend
+
+Technology
+
+Purpose
+
+🟢 Node.js
+
+Backend runtime
+
+🚂 Express.js
+
+REST API
+
+🍃 MongoDB
+
+Database
+
+📦 Mongoose
+
+MongoDB object modeling
+
+🔐 JWT
+
+Authentication
+
+🍪 Cookie Parser
+
+Cookie handling
+
+AI & APIs
+
+Technology
+
+Purpose
+
+🤖 OpenRouter API
+
+AI model integration
+
+🧠 DeepSeek Chat
+
+Website/code generation
+
+🔗 REST APIs
+
+Frontend-backend communication
+
+Payments
+
+Technology
+
+Purpose
+
+💳 Stripe Checkout
+
+Payment processing
+
+🔔 Stripe Webhooks
+
+Payment confirmation
+
+💰 Credit System
+
+Usage and billing management
+
+Deployment
+
+Technology
+
+Purpose
+
+☁️ Render
+
+Frontend and backend hosting
+
+🍃 MongoDB Atlas
+
+Cloud database
+
+🚀 Deployment Service
+
+Generated website deployment
+
+🏗️ System Design Architecture
+
+                                  ┌──────────────────────┐
+                                  │        CLIENT        │
+                                  │   React + Tailwind   │
+                                  │   Redux + Axios      │
+                                  └──────────┬───────────┘
+                                             │
+                                      HTTPS / REST API
                                              │
                                              ▼
-                                   ┌─────────────────┐
-                                   │ Generated Site  │
-                                   └────────┬────────┘
-                                            │
-                                            ▼
-                                   ┌─────────────────┐
-                                   │   Deployment    │
-                                   │    System 🚀    │
-                                   └─────────────────┘
+                              ┌──────────────────────────┐
+                              │       API SERVER         │
+                              │    Node.js + Express     │
+                              │                          │
+                              │ ┌──────────────────────┐ │
+                              │ │ Authentication       │ │
+                              │ │ Middleware / JWT     │ │
+                              │ └──────────────────────┘ │
+                              │                          │
+                              │ ┌──────────────────────┐ │
+                              │ │ Controllers           │ │
+                              │ │ Auth / User / Website│ │
+                              │ │ Billing               │ │
+                              │ └──────────────────────┘ │
+                              │                          │
+                              │ ┌──────────────────────┐ │
+                              │ │ Business Logic        │ │
+                              │ │ Credits / Generation  │ │
+                              │ │ Deployment            │ │
+                              │ └──────────────────────┘ │
+                              └────────────┬─────────────┘
+                                           │
+                    ┌──────────────────────┼──────────────────────┐
+                    │                      │                      │
+                    ▼                      ▼                      ▼
+          ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+          │    MongoDB      │    │  OpenRouter API  │    │     Stripe      │
+          │                 │    │                  │    │                 │
+          │ Users           │    │ AI Model         │    │ Checkout        │
+          │ Websites        │    │                  │    │ Webhooks        │
+          │ Credits         │    │ Code Generation  │    │ Payments        │
+          │ Plans           │    └────────┬─────────┘    └────────┬────────┘
+          └─────────────────┘             │                       │
+                                          ▼                       ▼
+                                ┌──────────────────┐    ┌──────────────────┐
+                                │ Generated Website│    │ Payment Verified │
+                                │      Code        │    │                  │
+                                └────────┬─────────┘    │ Credit Update    │
+                                         │              └────────┬─────────┘
+                                         │                       │
+                                         ▼                       ▼
+                                ┌──────────────────┐    ┌──────────────────┐
+                                │ Website Editor   │    │     MongoDB      │
+                                │                  │    │                  │
+                                │ Monaco Editor    │    │ credits += N     │
+                                │ Live Preview     │    │ plan = selected  │
+                                └────────┬─────────┘    └──────────────────┘
+                                         │
+                                         ▼
+                                ┌──────────────────┐
+                                │   Deployment     │
+                                │                  │
+                                │ Build / Package  │
+                                │ Deploy           │
+                                └────────┬─────────┘
+                                         │
+                                         ▼
+                                ┌──────────────────┐
+                                │   LIVE WEBSITE   │
+                                │        🌐        │
+                                └──────────────────┘
 
-                     Payment Flow
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Stripe Checkout │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Stripe Webhook  │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Update Credits  │
-                  └─────────────────┘
-```
+📂 Project Structure
 
----
-
-# 📂 Project Structure
-
-```text
 AI-WEB-FORGE/
 │
 ├── client/
@@ -201,10 +332,9 @@ AI-WEB-FORGE/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── hooks/
-│   │   ├── context/
 │   │   ├── assets/
-│   │   └── App.jsx
-│   │
+│   │   ├── App.jsx
+│   │   └── ...
 │   ├── public/
 │   ├── package.json
 │   └── ...
@@ -213,338 +343,389 @@ AI-WEB-FORGE/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/
-│   ├── services/
+│   ├── middlewares/
 │   ├── config/
+│   ├── utils/
 │   ├── index.js
 │   └── package.json
 │
 ├── .gitignore
 └── README.md
-```
 
-> The structure may evolve as the project grows.
+The project structure may evolve as new features are added.
 
----
+💳 Credit & Payment System
 
-# 💳 Credit System
+AI Web Forge uses a credit-based system to control AI usage.
 
-AI generations are controlled using a credit-based system.
-
-Example:
-
-```text
 New User
-   │
-   ▼
+    │
+    ▼
 Free Credits
-   │
-   ▼
+    │
+    ▼
 Generate Website
-   │
-   ▼
+    │
+    ▼
 Credits Deducted
-   │
-   ▼
-Credits = 0
-   │
-   ▼
-Purchase Credits
-   │
-   ▼
+    │
+    ▼
+Low / No Credits
+    │
+    ▼
+Choose Paid Plan
+    │
+    ▼
 Stripe Checkout
-   │
-   ▼
+    │
+    ▼
 Payment Successful
-   │
-   ▼
+    │
+    ▼
 Stripe Webhook
-   │
-   ▼
+    │
+    ▼
 Credits Added
-```
+    │
+    ▼
+Continue Generating
 
-This architecture allows the application to control AI usage while providing a foundation for SaaS monetization.
+The backend stores the user's credit balance and handles credit updates.
 
----
+Stripe Webhook Flow
 
-# 💰 Payment Flow
+The webhook endpoint receives Stripe events using the raw request body so that the Stripe signature can be verified before updating the user's account.
 
-Stripe is integrated using **Checkout + Webhooks**.
+Stripe
+   ↓
+checkout.session.completed
+   ↓
+Verify Stripe Signature
+   ↓
+Read Session Metadata
+   ↓
+Find User
+   ↓
+Add Purchased Credits
+   ↓
+Update Plan
 
-```text
-User
- │
- ▼
-Select Credit Plan
- │
- ▼
-Create Stripe Checkout Session
- │
- ▼
-Stripe Checkout
- │
- ▼
-Payment
- │
- ▼
-Stripe Webhook
- │
- ▼
-Verify Event
- │
- ▼
-Update User Credits
-```
+This keeps payment-related credit updates on the server rather than trusting the frontend.
 
-The backend handles payment verification and credit updates rather than trusting the frontend.
+🤖 AI Generation Architecture
 
----
+             User Prompt
+                  │
+                  ▼
+          Frontend Request
+                  │
+                  ▼
+           Authentication
+                  │
+                  ▼
+           Credit Validation
+                  │
+          ┌───────┴───────┐
+          │               │
+     Credits > 0      Credits = 0
+          │               │
+          ▼               ▼
+    OpenRouter API      Reject
+          │
+          ▼
+      AI Model
+          │
+          ▼
+    Structured Response
+          │
+          ▼
+      JSON Parser
+          │
+          ▼
+    Generated Website
+          │
+          ├──────────────► MongoDB
+          │
+          ▼
+     Live Preview
+          │
+          ▼
+      Code Editor
 
-# 🚀 Deployment Flow
+The application uses an AI API to transform natural-language requirements into website code and stores the generated website data for later editing and deployment.
 
-The goal of the deployment system is to make website publishing as simple as possible.
+🖥️ Website Editing & Preview
 
-```text
-Generate Website
+The editor provides a development workflow directly inside the application.
+
+Users can:
+
+View generated source code
+
+Edit the generated code
+
+Preview the result instantly
+
+Switch between desktop, tablet, and mobile views
+
+Send additional prompts to improve the website
+
+Deploy the final result
+
+🚀 Deployment Workflow
+
+Generated Website
        │
        ▼
-Generated Project
+Website Editor
        │
        ▼
-Deployment Process
+Deploy Request
        │
        ▼
-Build Website
+Backend Deployment API
+       │
+       ▼
+Build / Package
        │
        ▼
 Production Deployment
        │
        ▼
-Live URL 🚀
-```
+Live Website URL 🚀
 
-The long-term goal is to make deployment completely transparent to the user.
+The deployment workflow is designed to reduce the manual configuration normally required to publish a website.
 
----
 
 # 📈 Development Progress
 
-I'm building this project incrementally and documenting the development process through Git commits.
+AI Web Forge is being developed incrementally, with each major feature integrated and tested as part of the full-stack SaaS workflow.
 
-### Current Progress
+### ✅ Completed
 
-* [x] Project initialization
-* [x] React frontend setup
-* [x] Node.js backend setup
-* [x] Express API setup
-* [x] MongoDB integration
-* [x] Tailwind CSS setup
-* [x] Motion animation setup
-* [x] Authentication system
+* [x] Project initialization and folder structure
+* [x] React.js frontend setup
+* [x] Node.js + Express.js backend
+* [x] MongoDB + Mongoose integration
+* [x] Tailwind CSS integration
+* [x] Modern responsive UI
+* [x] Motion-based animations
+* [x] User authentication
+* [x] Google authentication
+* [x] JWT-based authentication
 * [x] Protected routes
-* [x] AI website generation
-* [x] Website preview
-* [ ] One-click deployment
-* [ ] Production optimization
-* [ ] Complete SaaS workflow
-
-> This checklist will be continuously updated as development progresses.
+* [x] User dashboard
+* [x] User profile management
+* [x] AI-powered website generation
+* [x] OpenRouter API integration
+* [x] Natural-language website prompts
+* [x] AI-generated website code handling
+* [x] Website editor
+* [x] Monaco code editor integration
+* [x] Live website preview
+* [x] Desktop / Tablet / Mobile preview modes
+* [x] AI-powered website refinement
+* [x] Website data persistence
+* [x] Credit-based usage system
+* [x] Credit deduction for AI generation
+* [x] Credit validation
+* [x] Pricing and credit plans
+* [x] Stripe Checkout integration
+* [x] Stripe test payment flow
+* [x] Stripe webhook integration
+* [x] Webhook signature verification
+* [x] Automatic credit updates after successful payment
+* [x] Plan updates after successful payment
+* [x] Website deployment workflow
+* [x] Live deployment URL handling
+* [x] Frontend deployment on Render
+* [x] Backend deployment on Render
+* [x] MongoDB Atlas integration
+* [x] Production environment configuration
 
 ---
 
 # 🗺️ Roadmap
 
-### Phase 1 — Foundation
+### 🔹 Phase 1 — Core Platform
 
-* [x] Initialize frontend
-* [x] Initialize backend
-* [x] Configure database
-* [x] Setup Tailwind CSS
-* [x] Setup animations
-* [ ] Design core UI
+* [x] Frontend and backend architecture
+* [x] Database integration
+* [x] Authentication system
+* [x] User dashboard
+* [x] Protected API routes
 
-### Phase 2 — Authentication
+### 🔹 Phase 2 — AI Website Builder
 
-* [x] User registration
-* [x] User login
-* [x] Authentication middleware
-* [X] Protected routes
-* [X] User dashboard
+* [x] Natural-language prompt system
+* [x] AI API integration
+* [x] Website code generation
+* [x] Code parsing and handling
+* [x] Website editor
+* [x] Live preview
+* [x] Responsive preview modes
+* [x] AI-powered refinement
 
-### Phase 3 — AI Website Generation
+### 🔹 Phase 3 — Credit & Billing
 
-* [x] Prompt input
-* [x] AI integration
-* [x] Website generation
-* [X] Generated code handling
-* [ ] Website preview
-* [ ] Regeneration workflow
-
-### Phase 4 — Credit System
-
-* [x] User credit model
+* [x] Credit-based usage system
 * [x] Credit deduction
 * [x] Credit validation
+* [x] Pricing plans
+* [x] Stripe Checkout
+* [x] Stripe webhooks
+* [x] Payment verification
+* [x] Automatic credit updates
 * [ ] Transaction history
-* [ ] Credit dashboard
+* [ ] Detailed usage analytics
 
-### Phase 5 — Payments
+### 🔹 Phase 4 — Deployment
 
-* [ ] Stripe integration
-* [ ] Checkout sessions
-* [ ] Credit packages
-* [ ] Stripe webhook
-* [ ] Payment verification
-* [ ] Automatic credit updates
+* [x] Website deployment workflow
+* [x] Deployment API
+* [x] Deployment status handling
+* [x] Live URL generation
+* [x] Access deployed websites
+* [x] Deployment history
+* [x] Deployment logs
+* [ ] Improved deployment error handling
 
-### Phase 6 — Deployment
+### 🔹 Phase 5 — Production Improvements
 
-* [ ] Deployment API
-* [ ] Generated project packaging
-* [ ] Automated deployment
-* [ ] Deployment status
-* [ ] Live URL generation
-* [ ] Deployment error handling
-
-### Phase 7 — Production
-
-* [ ] Production deployment
-* [ ] Error handling
-* [ ] Security improvements
-* [ ] API optimization
+* [x] Cloud deployment
+* [x] Environment-based configuration
+* [ ] Advanced error handling
+* [ ] API rate limiting
+* [ ] Improved input validation
 * [ ] Performance optimization
-* [ ] Responsive design
-* [ ] Final testing
+* [ ] Database query optimization
+* [ ] Monitoring and logging
+* [ ] Automated testing
+* [ ] Improved security
 
----
+### 🔹 Phase 6 — Future Features
 
-# 🎯 Learning Goals
+* [ ] Website templates
+* [ ] Custom domains
+* [ ] Website version history
+* [ ] Website duplication
+* [ ] Export generated projects
+* [ ] Advanced AI editing
+* [ ] Team collaboration
+* [ ] Usage analytics dashboard
+* [ ] Advanced subscription management
+* [ ] Scalable background job processing
 
-Through this project, I am focusing on learning and implementing:
 
-* Full-stack SaaS architecture
-* AI integration in real-world applications
-* REST API development
-* Authentication and authorization
-* Credit-based billing systems
-* Stripe Checkout integration
-* Stripe webhook handling
-* Secure payment processing
-* Automated deployment architecture
-* Cloud deployment
-* Database design
-* Production backend architecture
-* Frontend state management
-* API security
-* Error handling
-* Scalable application design
+🎯 Learning Goals
 
----
+This project provides practical experience with:
 
-# 📊 What Makes This Project Different?
+Full-stack SaaS architecture
 
-This isn't just a CRUD application.
+AI integration in web applications
 
-The goal is to build a **real-world SaaS product** that combines:
+REST API development
 
-```text
-AI
-+
-Full-Stack Development
-+
-Authentication
-+
-Credits
-+
-Payments
-+
-Automation
-+
-Deployment
-=
-AI SaaS Platform 🚀
-```
+Authentication and authorization
 
-The project is being developed incrementally with a focus on **real-world architecture, security, scalability, and deployment**.
+React state management
 
----
-# ⚙️ Getting Started
+Database design
 
-## 1. Clone the repository
+Credit-based usage systems
 
-```bash
+Stripe Checkout
+
+Stripe webhook handling
+
+Server-side payment verification
+
+Secure API development
+
+Code editor integration
+
+Automated deployment workflows
+
+Cloud deployment
+
+Error handling
+
+Production-oriented application development
+
+⚙️ Getting Started
+
+1. Clone the repository
+
 git clone https://github.com/YOUR_USERNAME/ai-web-forge.git
 cd ai-web-forge
-```
 
-## 2. Install frontend dependencies
+2. Install frontend dependencies
 
-```bash
 cd client
 npm install
-```
 
-## 3. Install backend dependencies
+3. Install backend dependencies
 
-```bash
 cd ../server
 npm install
-```
 
-## 4. Configure environment variables
+4. Configure environment variables
 
-Create `.env` files for the required credentials.
+Create the required .env files.
 
 Example:
 
-```env
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+
 STRIPE_SECRET_KEY=your_stripe_secret_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
-AI_API_KEY=your_ai_api_key
-```
 
-> Never commit `.env` files or secret API keys to GitHub.
+OPENROUTER_API_KEY=your_openrouter_api_key
+FRONTEND_URL=your_frontend_url
 
-## 5. Run the backend
+Never commit .env files, Stripe secret keys, database credentials, or API keys to GitHub.
 
-```bash
+5. Run the backend
+
 npm run dev
-```
 
-## 6. Run the frontend
+6. Run the frontend
 
-```bash
-cd ../client
+Open another terminal:
+
+cd client
 npm run dev
-```
 
----
+🔐 Security
 
-# 🔐 Security
+The application is designed with server-side validation and protected API operations.
 
-Security is an important part of this project.
+Security-related implementation includes:
 
-The application is designed to:
+Protected API routes
 
-* Protect private API routes
-* Validate authenticated users
-* Keep API keys on the server
-* Verify Stripe webhook events
-* Prevent unauthorized credit modifications
-* Keep sensitive environment variables outside the repository
-* Validate user input
-* Handle API errors safely
+JWT-based authentication
 
----
+Backend authorization
 
-# ☁️ Deployment
+Server-side API keys
 
-The application is intended to run in a production environment using:
+Stripe webhook signature verification
 
-```text
+Server-side credit updates
+
+Environment variables for sensitive credentials
+
+Input validation
+
+Error handling for API operations
+
+☁️ Deployment
+
+The application is deployed using cloud services:
+
 Frontend
    ↓
 Render
@@ -557,58 +738,60 @@ Database
    ↓
 MongoDB Atlas
 
+AI
+   ↓
+OpenRouter
+
 Payments
    ↓
 Stripe
-```
 
----
+Live Application
 
-# 📌 Development Philosophy
+🌐 Open AI Web Forge
 
-I am building this project publicly to document the complete development journey—from the initial setup to a production-ready SaaS application.
+📌 Development Philosophy
 
-Rather than building everything at once, the project is being developed through small, trackable iterations.
+AI Web Forge is being developed as a practical full-stack SaaS project with a focus on learning and implementing real-world development concepts.
 
-Each major feature will be reflected through:
+The project is developed incrementally through:
 
-* Git commits
-* Feature branches
-* README updates
-* UI improvements
-* Bug fixes
-* Architecture improvements
-* Production deployment updates
+Feature implementation
 
----
+Git commits
 
+Bug fixing
 
-# 🤝 Contributions
+API development
 
-This project is currently being developed as a personal learning and portfolio project.
+UI improvements
+
+Integration testing
+
+Cloud deployment
+
+Production-oriented improvements
+
+The goal is to understand how different parts of a modern SaaS application work together rather than building only a basic CRUD application.
+
+🤝 Contributions
+
+This is currently a personal learning and portfolio project.
 
 Suggestions, feedback, and ideas are welcome.
 
----
+⭐ Support
 
-# ⭐ Support
+If you find the project interesting, consider giving the repository a ⭐.
 
-If you find this project interesting, consider giving the repository a ⭐.
+👨‍💻 Developer
 
-It helps support the project and motivates further development.
-
----
-
-## 👨‍💻 Developer
-
-**Shiva Maurya**
+Shiva Maurya
 
 B.Tech Computer Science & Engineering
 
-Interested in:
+Interests:
 
-`Full-Stack Development` • `AI` • `SaaS` • `DSA` • `Backend Engineering`
+Full-Stack Development • AI • SaaS • DSA • Backend Engineering
 
----
-
-> 🚀 **Building in public. Learning by building. Turning ideas into products.**
+🚀 Building in public. Learning by building. Turning ideas into products.
